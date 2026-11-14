@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+
+/* Länsimetro Line world. Espoo blue #0050BB is the future line and every station sign; grey is the
+   travelled past; metro orange is reserved for "you are here", live and interchange. */
+@theme {
+  --color-paper: #ffffff;
+  --color-surface: #ffffff;
+  --color-mist: #dfe5eb;
+  --color-mist-soft: #f1f4f7;
+  --color-ink: #101820;
+  --color-ink-2: #36404c;
+  --color-ink-3: #545d68;
+  --color-line: #dfe5eb;
+  --color-line-strong: #7d848c;
+  --color-navy: #012169;
+  --color-sea: #0050bb;
+  --color-sea-deep: #003a8c;
+  --color-sea-soft: #e6eef9;
+  --color-sea-bright: #8db6f5;
+  --color-stone: #a7acb0;
+  --color-stone-deep: #545b63;
+  --color-stone-soft: #eef1f4;
+  --color-metro: #ff6319;
+  --color-metro-deep: #b83c06;
+  --color-metro-soft: #ffe9de;
+  --color-dawn: #ff6319;
+  --color-dawn-soft: #ffe9de;
+  --color-rose: #ff6319;
+  --color-rose-soft: #ffe9de;
+  --color-moss: #1b7a4f;
+  --color-moss-soft: #e2f3ea;
+  --color-clay: #c4262e;
+  --color-clay-soft: #fde8e6;
+
+  --font-display: 'Schibsted Grotesk Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: 'Schibsted Grotesk Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Schibsted Grotesk Variable', 'Helvetica Neue', Arial, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 12px;
+
+  --shadow-card: none;
+  --shadow-lift: 0 12px 28px -14px rgb(16 24 32 / 0.28);
+  --shadow-float: 0 4px 10px rgb(1 33 105 / 0.18), 0 24px 60px -16px rgb(1 33 105 / 0.45);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color-scheme: light;
+    scroll-padding-top: 88px;
+  }
+  body {
+    @apply bg-paper text-ink font-sans;
+    font-size: 16px;
+    line-height: 1.55;
+    caret-color: var(--color-sea);
+    scrollbar-color: var(--color-stone) var(--color-mist-soft);
+  }
+  a,
+  .underline {
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 2px;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-mist-soft);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-stone);
+    border: 3px solid var(--color-mist-soft);
+    border-radius: 999px;
+  }
+  html,
+  body {
+    overflow-x: clip;
+  }
+  /* Grid children may shrink below their content width (prevents mobile overflow). */
+  .grid > * {
+    min-width: 0;
+  }
+  ::selection {
+    background: var(--color-sea);
+    color: #ffffff;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-metro);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  button,
+  [role='button'],
+  label[for],
+  summary {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  dialog::backdrop {
+    background: rgb(14 26 43 / 0.35);
+    backdrop-filter: blur(2px);
+  }
+}
+
+@layer components {
+  /* Small label naming the content beside or below it (never a kicker above a heading). */
+  .eyebrow {
+    @apply text-[13px] font-semibold text-ink-3;
+  }
+  .display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  .band {
+    margin-inline: calc(50% - 50vw);
+    padding-inline: calc(50vw - 50%);
+  }
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.panel-enter {
+  animation: stage-in 0.22s var(--ease-out-quint) both;
+  transform-origin: bottom right;
+}
+.stage-enter {
+  animation: stage-in 0.24s var(--ease-out-quint) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

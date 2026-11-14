@@ -1,0 +1,286 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Beyond intro</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=block">
+<style>
+:root{--paper:#FFFFFF;--mist:#F1F4F7;--ink:#101820;--ink2:#36404C;--ink3:#545D68;--line:#DFE5EB;--sea:#0050BB;--sea-soft:#E6EEF9;--sea-bright:#8DB6F5;--stone:#A7ACB0;--stone-deep:#545B63;--stone-soft:#EEF1F4}
+html,body{margin:0;background:#fff}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:'Schibsted Grotesk',Helvetica,Arial,sans-serif;color:var(--ink)}
+p{margin:0}
+.scene{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.a{position:absolute;box-sizing:border-box}
+.h1{font-size:76px;font-weight:600;letter-spacing:-1.6px;line-height:1.12}
+.h2{font-size:64px;font-weight:600;letter-spacing:-1.3px;line-height:1.1}
+.h3{font-size:34px;font-weight:600;letter-spacing:-0.4px;line-height:1.2}
+.lab{font-size:24px;font-weight:600;color:var(--ink3)}
+.lab.sea{color:var(--sea)}
+.body{font-size:26px;line-height:1.45;color:var(--ink2)}
+.card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:36px}
+.card.focus{border:3px solid var(--sea)}
+.ring{border-radius:50%;box-sizing:border-box}
+.dot{width:40px;height:40px;border-radius:50%;border:8px solid var(--stone);background:#fff}
+.dot.sea{border-color:var(--sea)}
+.sdot{flex:none;width:28px;height:28px;border-radius:50%;border:6px solid var(--sea);background:#fff}
+.sdot.grey{border-color:var(--stone)}
+.chip{font-size:26px;font-weight:500;padding:8px 22px;border-radius:40px;background:var(--sea-soft);color:#003A8C;white-space:nowrap}
+.chip.grey{background:var(--stone-soft);color:var(--stone-deep)}
+.bar{height:8px;border-radius:4px;background:var(--line)}
+.strike{height:4px;background:var(--ink);transform-origin:left center}
+.arrow{width:56px;height:28px;background:var(--stone);clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);transform-origin:left center}
+.row{display:flex;align-items:center;gap:16px}
+svg.ic{width:32px;height:32px;flex:none}
+</style></head>
+<body><div id="stage">
+
+<!-- ============ SCENE 1 · HOOK 0–15 ============ -->
+<div class="scene" style="background:var(--paper)" data-t="0" data-o="14.75" data-a="none">
+  <p class="a h1" style="left:160px;top:330px;width:1600px" data-t="0.4" data-d="1.6" data-a="type" data-o="5.2" data-text="What if the best person for the job"></p>
+  <p class="a h1" style="left:160px;top:430px;width:1600px;color:var(--sea)" data-t="2.4" data-d="1.4" data-a="type" data-o="5.2" data-text="has never held the title?"></p>
+
+  <div class="a row" style="left:160px;top:200px" data-t="5.6" data-a="rise">
+    <div style="width:88px;height:88px;border-radius:50%;background:var(--sea-soft);display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:600;color:var(--sea)">KM</div>
+    <div><p style="font-size:40px;font-weight:600">Kimi Muusi</p><p class="body">Guest experience lead, hospitality</p></div>
+  </div>
+  <div class="a" style="left:180px;top:476px;width:1060px;height:8px;background:var(--stone);transform-origin:left center" data-t="6.0" data-d="3.6" data-a="drawx"></div>
+  <div class="a dot" style="left:160px;top:460px" data-t="6.3" data-a="pop"></div>
+  <p class="a body" style="left:160px;top:530px;width:320px;color:var(--stone-deep)" data-t="6.5" data-a="rise">Front desk associate<br>2021–2023</p>
+  <div class="a dot" style="left:540px;top:460px" data-t="7.4" data-a="pop"></div>
+  <p class="a body" style="left:540px;top:530px;width:320px;color:var(--stone-deep)" data-t="7.6" data-a="rise">Guest experience lead<br>2023–now</p>
+  <div class="a dot sea" style="left:920px;top:460px" data-t="8.6" data-a="pop"></div>
+  <p class="a body" style="left:920px;top:530px;width:340px;color:var(--ink)" data-t="8.8" data-a="rise"><b style="color:var(--sea)">Self-taught</b><br>customer success course, AI tools</p>
+  <div class="a" style="left:1236px;top:444px;width:10px;height:72px;background:var(--ink);border-radius:3px" data-t="11.7" data-a="pop"></div>
+
+  <div class="a card" style="left:1320px;top:330px;width:440px;background:var(--mist)" data-t="10.2" data-a="left">
+    <p class="lab">Customer Success Specialist</p>
+    <p style="font-size:34px;font-weight:600;line-height:1.25;margin-top:14px">3+ years in a SaaS Customer Success role</p>
+  </div>
+  <p class="a" style="left:1340px;top:560px;font-size:28px;font-weight:600;color:#fff;background:var(--ink);border-radius:8px;padding:10px 20px" data-t="11.5" data-a="stamp">Filtered out at CV screening</p>
+
+  <p class="a h1" style="left:160px;top:800px;width:1600px" data-t="12.9" data-a="rise">Your past shouldn’t define your future.</p>
+</div>
+
+<!-- ============ SCENE 2 · PROBLEM 15–45 ============ -->
+<div class="scene" style="background:var(--mist)" data-t="14.75" data-o="44.75" data-a="fade" data-d="0.5">
+  <p class="a h2" style="left:160px;top:120px;width:1640px" data-t="15.3" data-a="rise">The job market is changing.<br><span style="color:var(--sea)">Recruitment isn’t keeping up.</span></p>
+
+  <div class="a card" style="left:160px;top:340px;width:480px;height:320px" data-t="19.0" data-a="pop" data-dim="31.8">
+    <p class="lab">Companies</p><p class="h3" style="margin-top:8px">Job requirements</p>
+    <p class="body" style="margin-top:10px">An ideal past profile, not the real work.</p>
+  </div>
+  <p class="a chip grey" style="left:196px;top:580px" data-t="20.4" data-a="pop" data-dim="31.8">3+ years</p>
+  <p class="a chip grey" style="left:340px;top:580px" data-t="20.8" data-a="pop" data-dim="31.8">Degree</p>
+  <p class="a chip grey" style="left:470px;top:580px" data-t="21.2" data-a="pop" data-dim="31.8">Exact title</p>
+
+  <div class="a arrow" style="left:652px;top:486px" data-t="23.6" data-a="drawx" data-dim="31.8"></div>
+
+  <div class="a card" style="left:720px;top:340px;width:480px;height:320px" data-t="24.0" data-a="pop" data-dim="31.8">
+    <p class="lab">Candidates</p><p class="h3" style="margin-top:8px">CV filtering</p>
+    <p class="body" style="margin-top:10px">Must sell their past: titles, years, keywords.</p>
+  </div>
+  <p class="a chip grey" style="left:756px;top:580px" data-t="25.0" data-a="pop" data-dim="31.8">Hospitality</p>
+  <p class="a chip grey" style="left:930px;top:580px" data-t="25.4" data-a="pop" data-dim="31.8">Self-taught</p>
+  <div class="a strike" style="left:766px;top:603px;width:140px" data-t="26.4" data-a="drawx" data-dim="31.8"></div>
+  <div class="a strike" style="left:940px;top:603px;width:146px" data-t="26.9" data-a="drawx" data-dim="31.8"></div>
+
+  <div class="a arrow" style="left:1212px;top:486px" data-t="28.6" data-a="drawx" data-dim="31.8"></div>
+
+  <div class="a card focus" style="left:1280px;top:340px;width:480px;height:320px" data-t="29.0" data-a="pop" data-dim="31.8">
+    <p class="lab">Result</p><p class="h3" style="margin-top:8px;color:var(--sea)">Missed potential</p>
+    <p class="body" style="margin-top:10px">People who could do the work never get the conversation.</p>
+  </div>
+
+  <!-- AI makes it worse -->
+  <div class="a card" style="left:160px;top:720px;width:220px;height:170px;padding:24px" data-t="32.4" data-a="pop">
+    <p class="chip" style="display:inline-block;font-size:22px;padding:4px 14px">AI</p>
+    <div class="bar" style="margin-top:18px;width:160px"></div><div class="bar" style="margin-top:12px;width:140px"></div><div class="bar" style="margin-top:12px;width:150px"></div>
+  </div>
+  <div class="a card" style="left:404px;top:720px;width:220px;height:170px;padding:24px" data-t="32.8" data-a="pop">
+    <p class="chip" style="display:inline-block;font-size:22px;padding:4px 14px">AI</p>
+    <div class="bar" style="margin-top:18px;width:160px"></div><div class="bar" style="margin-top:12px;width:140px"></div><div class="bar" style="margin-top:12px;width:150px"></div>
+  </div>
+  <div class="a card" style="left:648px;top:720px;width:220px;height:170px;padding:24px" data-t="33.2" data-a="pop">
+    <p class="chip" style="display:inline-block;font-size:22px;padding:4px 14px">AI</p>
+    <div class="bar" style="margin-top:18px;width:160px"></div><div class="bar" style="margin-top:12px;width:140px"></div><div class="bar" style="margin-top:12px;width:150px"></div>
+  </div>
+  <div class="a card" style="left:892px;top:720px;width:220px;height:170px;padding:24px" data-t="33.6" data-a="pop">
+    <p class="chip" style="display:inline-block;font-size:22px;padding:4px 14px">AI</p>
+    <div class="bar" style="margin-top:18px;width:160px"></div><div class="bar" style="margin-top:12px;width:140px"></div><div class="bar" style="margin-top:12px;width:150px"></div>
+  </div>
+  <p class="a body" style="left:160px;top:910px;width:960px" data-t="34.6" data-a="rise">Every application looks polished. Polish stops meaning anything.</p>
+
+  <p class="a" style="left:1280px;top:700px;font-size:150px;font-weight:700;letter-spacing:-4px;line-height:1;color:var(--sea)" data-t="38.0" data-d="2.0" data-a="count" data-to="52" data-suffix="%">0%</p>
+  <p class="a body" style="left:1284px;top:870px;width:500px" data-t="39.4" data-a="rise">weaker link between a tailored cover letter and a callback</p>
+</div>
+
+<!-- ============ SCENE 3 · RESEARCH 45–75 ============ -->
+<div class="scene" style="background:var(--paper)" data-t="44.75" data-o="74.75" data-a="fade" data-d="0.5">
+  <p class="a h2" style="left:160px;top:128px;width:1640px" data-t="45.3" data-a="rise">Changing job descriptions isn’t enough.</p>
+
+  <div class="a card" style="left:160px;top:300px;width:384px;height:380px" data-t="46.6" data-a="pop">
+    <p class="h3">Open up opportunity</p>
+    <p class="body" style="margin-top:14px">Dropping degree requirements often didn’t change who got hired.</p>
+  </div>
+  <p class="a chip grey" style="left:196px;top:590px" data-t="47.8" data-a="pop">Degree required</p>
+  <div class="a strike" style="left:206px;top:613px;width:210px" data-t="48.8" data-a="drawx"></div>
+
+  <div class="a card" style="left:584px;top:300px;width:384px;height:380px" data-t="51.4" data-a="pop">
+    <p class="h3">Define real work</p>
+    <p class="body" style="margin-top:14px">Link real tasks to the capabilities they need.</p>
+  </div>
+  <div class="a card" style="left:1008px;top:300px;width:384px;height:380px" data-t="53.6" data-a="pop">
+    <p class="h3">Observe problem-solving</p>
+    <p class="body" style="margin-top:14px">Structured, job-relevant interviews work.</p>
+  </div>
+  <div class="a card focus" style="left:1432px;top:300px;width:384px;height:380px" data-t="56.0" data-a="pop">
+    <p class="h3">Ask less up front</p>
+  </div>
+  <p class="a" style="left:1470px;top:400px;font-size:120px;font-weight:700;letter-spacing:-3px;line-height:1;color:var(--sea)" data-t="58.2" data-d="1.8" data-a="count" data-to="36" data-suffix="%">0%</p>
+  <p class="a body" style="left:1470px;top:540px;width:320px" data-t="59.6" data-a="rise">quit when asked to jump through too many hoops</p>
+
+  <div class="a" style="left:160px;top:770px;width:8px;height:150px;background:var(--sea);transform-origin:center top" data-t="65.0" data-a="drawy"></div>
+  <p class="a" style="left:208px;top:776px;width:1500px;font-size:52px;font-weight:600;line-height:1.22;letter-spacing:-0.8px" data-t="65.3" data-d="4.2" data-a="type" data-text="Recruiting for potential requires changing the interaction, not just the job posting."></p>
+</div>
+
+<!-- ============ SCENE 4 · BEYOND 75–100 ============ -->
+<div class="scene" style="background:var(--sea);color:#fff" data-t="74.75" data-o="99.75" data-a="wipe" data-d="1.0">
+  <div class="a" style="left:160px;top:212px;width:44px;height:14px;background:var(--sea-bright);transform-origin:left center" data-t="75.6" data-a="drawx"></div>
+  <div class="a ring" style="left:200px;top:174px;width:90px;height:90px;border:15px solid #fff" data-t="75.9" data-a="pop"></div>
+  <div class="a" style="left:288px;top:212px;width:30px;height:14px;background:#fff;transform-origin:left center" data-t="76.2" data-a="drawx"></div>
+  <p class="a" style="left:342px;top:140px;font-size:140px;font-weight:700;letter-spacing:-4px;line-height:1" data-t="76.3" data-a="rise">Beyond</p>
+  <p class="a" style="left:160px;top:320px;font-size:48px;font-weight:600;letter-spacing:-0.8px" data-t="77.6" data-a="rise">Recruitment for the Future, Not by the Past.</p>
+
+  <!-- part labels -->
+  <div class="a" style="left:160px;top:470px;width:300px;height:4px;background:var(--sea-bright);transform-origin:left center" data-t="80.4" data-a="drawx"></div>
+  <p class="a" style="left:160px;top:490px;font-size:26px;font-weight:600;color:var(--sea-soft)" data-t="80.6" data-a="rise">Part 1 · Prescreen</p>
+  <div class="a" style="left:500px;top:470px;width:1292px;height:4px;background:var(--sea-bright);transform-origin:left center" data-t="84.2" data-a="drawx" data-d="1.0"></div>
+  <p class="a" style="left:500px;top:490px;font-size:26px;font-weight:600;color:var(--sea-soft)" data-t="84.4" data-a="rise">Part 2 · Matching</p>
+
+  <!-- track -->
+  <div class="a" style="left:220px;top:616px;width:290px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="81.4" data-a="drawx" data-d="1.2"></div>
+  <div class="a ring" style="left:160px;top:590px;width:60px;height:60px;border:9px solid #fff;background:#fff" data-t="80.9" data-a="pop"></div>
+  <p class="a" style="left:160px;top:676px;font-size:32px;font-weight:600" data-t="81.3" data-a="rise">Prescreen</p>
+  <p class="a" style="left:160px;top:726px;width:300px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="81.6" data-a="rise">Each event sets its bar. AI summarises, people decide.</p>
+
+  <div class="a" style="left:560px;top:616px;width:198px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="85.9" data-a="drawx" data-d="1.4"></div>
+  <div class="a" style="left:818px;top:616px;width:198px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="88.0" data-a="drawx" data-d="1.6"></div>
+  <div class="a" style="left:1076px;top:616px;width:198px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="90.5" data-a="drawx" data-d="1.6"></div>
+  <div class="a" style="left:1334px;top:616px;width:198px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="93.0" data-a="drawx" data-d="1.6"></div>
+  <div class="a" style="left:1592px;top:616px;width:200px;height:0;border-top:8px dashed var(--sea-bright);transform-origin:left center" data-t="95.6" data-a="drawx" data-d="1.4"></div>
+
+  <div class="a ring" style="left:500px;top:590px;width:60px;height:60px;border:9px solid #fff" data-t="85.5" data-a="pop"></div>
+  <p class="a" style="left:500px;top:676px;font-size:32px;font-weight:600" data-t="85.7" data-a="rise">Refine the job</p>
+  <p class="a" style="left:500px;top:726px;width:230px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="85.9" data-a="rise">Companies describe the real work.</p>
+
+  <div class="a ring" style="left:758px;top:590px;width:60px;height:60px;border:9px solid #fff" data-t="87.6" data-a="pop"></div>
+  <p class="a" style="left:758px;top:676px;font-size:32px;font-weight:600" data-t="87.8" data-a="rise">Apply</p>
+  <p class="a" style="left:758px;top:726px;width:230px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="88.0" data-a="rise">Why this, why me, and a short task.</p>
+
+  <div class="a ring" style="left:1016px;top:590px;width:60px;height:60px;border:9px solid #fff" data-t="90.1" data-a="pop"></div>
+  <p class="a" style="left:1016px;top:676px;font-size:32px;font-weight:600" data-t="90.3" data-a="rise">Choose</p>
+  <p class="a" style="left:1016px;top:726px;width:230px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="90.5" data-a="rise">The company reads every answer.</p>
+
+  <div class="a ring" style="left:1274px;top:590px;width:60px;height:60px;border:9px solid #fff" data-t="92.6" data-a="pop"></div>
+  <p class="a" style="left:1274px;top:676px;font-size:32px;font-weight:600" data-t="92.8" data-a="rise">Meet</p>
+  <p class="a" style="left:1274px;top:726px;width:230px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="93.0" data-a="rise">Eight minutes. One real problem.</p>
+
+  <div class="a ring" style="left:1532px;top:590px;width:60px;height:60px;border:9px solid #fff" data-t="95.1" data-a="pop"></div>
+  <p class="a" style="left:1532px;top:676px;font-size:32px;font-weight:600" data-t="95.3" data-a="rise">Continue</p>
+  <p class="a" style="left:1532px;top:726px;width:250px;font-size:24px;line-height:1.45;color:var(--sea-soft)" data-t="95.5" data-a="rise">The best matches continue.</p>
+</div>
+
+<!-- ============ SCENE 5 · PRESCREEN 100–131 ============ -->
+<div class="scene" style="background:var(--mist)" data-t="99.75" data-o="131.0" data-a="fade" data-d="0.5">
+  <p class="a h2" style="left:160px;top:110px;width:1640px" data-t="100.3" data-a="rise">Every event sets its bar.</p>
+  <div class="a card row" style="left:160px;top:230px;width:1632px;height:96px;padding:0 36px;gap:28px" data-t="101.8" data-a="rise">
+    <p class="lab">Example event</p>
+    <p style="font-size:32px;font-weight:600;white-space:nowrap">Espoo Deep Tech Event</p>
+    <p class="body"><b style="color:var(--ink)">Entry level:</b> can contribute to deep tech product development from day one.</p>
+  </div>
+
+  <!-- candidate -->
+  <div class="a card" style="left:160px;top:370px;width:480px;height:540px" data-t="104.8" data-a="pop">
+    <p class="lab">Candidate</p><p class="h3" style="margin-top:8px">Shares evidence</p>
+  </div>
+  <p class="a chip" style="left:196px;top:510px" data-t="106.0" data-a="pop">LinkedIn</p>
+  <p class="a chip" style="left:362px;top:510px" data-t="106.6" data-a="pop">GitHub</p>
+  <p class="a chip" style="left:196px;top:572px" data-t="107.2" data-a="pop">Portfolio</p>
+  <p class="a chip" style="left:356px;top:572px" data-t="107.8" data-a="pop">Degree</p>
+  <p class="a lab sea" style="left:196px;top:668px" data-t="111.4" data-a="rise">Or qualifies another way</p>
+  <div class="a row" style="left:196px;top:716px;width:410px" data-t="112.2" data-a="rise"><div class="sdot"></div><p class="body">The event’s task</p></div>
+  <div class="a row" style="left:196px;top:772px;width:410px;align-items:flex-start" data-t="114.5" data-a="rise"><div class="sdot" style="margin-top:6px"></div><p class="body">A recommendation from an employer, coach or school</p></div>
+
+  <div class="a arrow" style="left:654px;top:626px" data-t="118.0" data-a="drawx"></div>
+
+  <!-- AI -->
+  <div class="a card focus" style="left:724px;top:370px;width:520px;height:540px" data-t="118.4" data-a="pop">
+    <div class="row" style="justify-content:space-between"><p class="lab sea">AI</p><p class="chip" style="font-size:24px;padding:6px 18px">AI summary</p></div>
+    <p class="h3" style="margin-top:12px">Summarises against the entry level</p>
+    <div style="margin-top:24px;background:var(--sea-soft);border-radius:10px;height:250px"></div>
+  </div>
+  <svg class="a ic" style="left:790px;top:620px;color:var(--sea)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" data-t="120.1" data-a="pop"><polyline points="20 6 9 17 4 12"/></svg>
+  <p class="a" style="left:838px;top:614px;width:360px;font-size:26px;line-height:1.4" data-t="120.3" data-d="1.8" data-a="type" data-text="Three open-source robotics projects match the entry level"></p>
+  <svg class="a ic" style="left:790px;top:740px;color:var(--sea)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" data-t="122.5" data-a="pop"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+  <p class="a" style="left:838px;top:734px;width:360px;font-size:26px;line-height:1.4" data-t="122.7" data-d="1.6" data-a="type" data-text="Unclear: hands-on work with embedded hardware"></p>
+
+  <div class="a arrow" style="left:1258px;top:626px" data-t="125.0" data-a="drawx"></div>
+
+  <!-- person -->
+  <div class="a card" style="left:1328px;top:370px;width:464px;height:540px" data-t="125.4" data-a="pop">
+    <p class="lab">Event team</p><p class="h3" style="margin-top:8px">A person decides</p>
+  </div>
+  <div class="a row" style="left:1364px;top:512px;width:400px;align-items:flex-start" data-t="126.4" data-a="rise"><div class="sdot" style="margin-top:6px"></div><p class="body">In the target group: welcome to the event</p></div>
+  <div class="a row" style="left:1364px;top:612px;width:400px;align-items:flex-start" data-t="127.4" data-a="rise"><div class="sdot" style="margin-top:6px"></div><p class="body">Unclear: ask the candidate, or offer the event’s task</p></div>
+  <div class="a row" style="left:1364px;top:712px;width:400px;align-items:flex-start" data-t="128.4" data-a="rise"><div class="sdot grey" style="margin-top:6px"></div><p class="body">Not this event: pointed to other events</p></div>
+  <p class="a" style="left:1364px;top:832px;font-size:26px;font-weight:600;color:#fff;background:var(--ink);border-radius:8px;padding:10px 20px" data-t="129.4" data-a="stamp">AI never rejects anyone.</p>
+</div>
+
+<!-- ============ END CARD 131–140 ============ -->
+<div class="scene" style="background:var(--sea);color:#fff" data-t="130.8" data-a="wipe" data-d="1.0">
+  <p class="a" style="left:160px;top:380px;width:1600px;font-size:110px;font-weight:700;letter-spacing:-3px;line-height:1.05" data-t="131.6" data-a="rise">AI summarises.</p>
+  <p class="a" style="left:160px;top:500px;width:1600px;font-size:110px;font-weight:700;letter-spacing:-3px;line-height:1.05;color:var(--sea-bright)" data-t="132.4" data-a="rise">People decide.</p>
+  <div class="a" style="left:160px;top:742px;width:1100px;height:8px;background:var(--sea-bright);transform-origin:left center" data-t="135.6" data-a="drawx" data-d="1.6"></div>
+  <div class="a ring" style="left:1260px;top:716px;width:60px;height:60px;border:9px solid #fff" data-t="137.0" data-a="pop"></div>
+  <p class="a" style="left:160px;top:790px;font-size:36px;font-weight:600;color:var(--sea-soft)" data-t="136.0" data-a="rise">Next: see it in action</p>
+</div>
+
+</div>
+<script>
+// Timeline is authored on a 140 s grid and mapped onto 60 s, scene by scene.
+const SRC=[0,15,45,75,100,131,140], DST=[0,11,22,30,41,55,60];
+const seg=t=>{let i=0;while(i<SRC.length-2&&t>=SRC[i+1])i++;return i};
+const M=t=>{const i=seg(t);return DST[i]+(t-SRC[i])*(DST[i+1]-DST[i])/(SRC[i+1]-SRC[i])};
+const K=t=>{const i=seg(t);return (DST[i+1]-DST[i])/(SRC[i+1]-SRC[i])};
+const D=(el,t)=>{const a=el.dataset.a;const d=el.dataset.d?+el.dataset.d:(a==='drawx'||a==='drawy'?0.9:0.6);return (a==='wipe'||a==='fade')?Math.min(d,0.5):Math.max(0.35,d*K(t))};
+const els=[...document.querySelectorAll('[data-a]')].map(el=>({el,a:el.dataset.a,t:M(+el.dataset.t),d:D(el,+el.dataset.t),o:el.dataset.o?M(+el.dataset.o):null,dim:el.dataset.dim?M(+el.dataset.dim):null,text:el.dataset.text,to:+(el.dataset.to||0),suf:el.dataset.suffix||''}));
+const cl=x=>Math.max(0,Math.min(1,x));
+const out3=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.4;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+function render(t){
+  for(const s of els){
+    const p=cl((t-s.t)/s.d), e=out3(p);
+    let op=1, tf='', clip='';
+    switch(s.a){
+      case 'none': op=t>=s.t?1:0; break;
+      case 'fade': op=e; break;
+      case 'rise': op=e; tf=`translateY(${(1-e)*28}px)`; break;
+      case 'left': op=e; tf=`translateX(${(1-e)*80}px)`; break;
+      case 'pop': op=cl(p*2); tf=`scale(${0.86+0.14*back(p)})`; break;
+      case 'stamp': op=cl(p*3); tf=`scale(${1.5-0.5*out3(p)}) rotate(${-4*e}deg)`; break;
+      case 'drawx': op=p>0?1:0; tf=`scaleX(${e})`; break;
+      case 'drawy': op=p>0?1:0; tf=`scaleY(${e})`; break;
+      case 'wipe': op=p>0?1:0; clip=`circle(${e*120}% at 50% 50%)`; break;
+      case 'type': op=p>0?1:0; s.el.textContent=s.text.slice(0,Math.round(s.text.length*p)); break;
+      case 'count': op=p>0?1:0; s.el.textContent=Math.round(s.to*e)+s.suf; break;
+    }
+    if(s.o!==null) op*=1-cl((t-s.o)/0.5);
+    if(s.dim!==null) op*=1-0.72*cl((t-s.dim)/0.6);
+    s.el.style.opacity=op; s.el.style.transform=tf; s.el.style.clipPath=clip;
+    s.el.style.visibility=op<=0.001?'hidden':'visible';
+  }
+}
+window.render=render;
+const q=new URLSearchParams(location.search).get('t');
+if(q!==null) render(+q);
+else { const t0=performance.now(); (function loop(){render((performance.now()-t0)/1000);requestAnimationFrame(loop)})(); }
+</script>
+</body></html>
